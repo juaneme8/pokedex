@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function Layout({ title, children }) {
 	return (
-		<div className='bg-red-100'>
+		<div className='bg-gray-300'>
 			<Head>
 				<title>{title}</title>
 				<link rel='icon' href='/favicon.ico' />
