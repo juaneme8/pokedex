@@ -7,14 +7,14 @@ export default function Home({ pokemon }) {
 			<Layout title='NextJS Pokedex'>
 				<h1 className='text-4xl mb-8 text-center'>Next.js Pokedex</h1>
 				<ul>
-					{pokemon.map((pokeman, index)  =>  (
+					{pokemon.map((pokeman, index) => (
 						<li key={index}>
-							<Link href={`/pokemon?id=${index+1}`}>
-							<a className="flex border border-gray-400 p-4 my-2 capitalize items-center bg-gray-200 rounded-md">
-								<img className="w-20 h-20" src={pokeman.image} alt={pokeman.name}/>
-								<span className="mr-2 font-bold">{index+1}</span>
-								{pokeman.name}
-							</a>
+							<Link href={`/pokemon?id=${index + 1}`}>
+								<a className='flex border border-gray-400 p-4 my-2 capitalize items-center bg-gray-200 rounded-md'>
+									<img className='w-20 h-20 mr-3' src={pokeman.image} alt={pokeman.name} />
+									<span className='mr-2 font-bold'>{index + 1}</span>
+									{pokeman.name}
+								</a>
 							</Link>
 						</li>
 					))}
